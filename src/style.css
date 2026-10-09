@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Space Grotesk", sans-serif;
+  color: #171717;
+  background: #ffd83d;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: radial-gradient(#171717 0.8px, transparent 0.8px);
+  background-size: 18px 18px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  width: min(100% - 32px, 620px);
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #171717;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 3px solid #171717;
+  background: #ff5959;
+  box-shadow: 4px 4px 0 #171717;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.coin {
+  padding: 9px 12px;
+  border: 3px solid #171717;
+  background: white;
+  box-shadow: 3px 3px 0 #171717;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero {
+  padding: 58px 0 34px;
+}
+
+.eyebrow {
+  display: inline-block;
+  padding: 7px 10px;
+  border: 2px solid #171717;
+  background: #8be8a1;
+  box-shadow: 3px 3px 0 #171717;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  margin: 22px 0 12px;
+  font-size: clamp(48px, 12vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #e94343;
+  -webkit-text-stroke: 1px #171717;
+  text-shadow: 3px 3px 0 #171717;
+}
+
+.hero p {
+  max-width: 340px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.reaction-card {
+  padding: 22px;
+  border: 3px solid #171717;
+  background: #fffdf5;
+  box-shadow: 8px 8px 0 #171717;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.number {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #171717;
+  background: #80bfff;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.card-heading h2 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.8px;
+}
+
+label {
+  display: block;
+  margin: 20px 0 9px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  border: 2px solid #171717;
+  border-radius: 0;
+  outline: none;
+  background: white;
+  font-size: 13px;
+}
+
+input:focus {
+  box-shadow: 4px 4px 0 #80bfff;
+}
+
+.hint {
+  margin: 9px 0 20px;
+  color: #666;
+  font-size: 11px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  border: 2px dashed #171717;
+  background: #fff2bc;
+}
+
+.preview > span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.emoji-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.emoji {
+  font-size: 24px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  border: 3px solid #171717;
+  border-radius: 0;
+  background: #ff5959;
+  box-shadow: 5px 5px 0 #171717;
+  color: #171717;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+
+button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #171717;
+}
+
+.notice {
+  margin: 20px 0 0;
+  padding: 12px;
+  border: 2px solid #171717;
+  background: #8be8a1;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 26px 0 10px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+@media (max-width: 400px) {
+  .reaction-card {
+    padding: 16px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+                                    }
